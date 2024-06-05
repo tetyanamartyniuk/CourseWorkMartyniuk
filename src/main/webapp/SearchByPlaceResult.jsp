@@ -90,7 +90,7 @@
             <c:forEach var="thing" items="${thingByPlaceList}">
                 <tr>
                     <td>
-                        <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}" class="item-link">${thing.name}</a>
+                        <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&phoneNumber=${thing.phoneNumber}" class="item-link">${thing.name}</a>
                     </td>
                 </tr>
             </c:forEach>

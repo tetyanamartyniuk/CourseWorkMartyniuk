@@ -60,7 +60,7 @@
             <c:forEach var="thing" items="${thingList}">
                 <tr>
                     <td>
-                        <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}" class="button">${thing.name}</a>
+                        <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&phoneNumber=${thing.phoneNumber}" class="button">${thing.name}</a>
                     </td>
                 </tr>
             </c:forEach>

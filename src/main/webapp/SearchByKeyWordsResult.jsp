@@ -84,7 +84,7 @@
         <ul>
             <c:forEach var="thing" items="${allThings}">
                 <li>
-                    <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}" class="item-link">${thing.getName()}</a>
+                    <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&phoneNumber=${thing.phoneNumber}" class="item-link">${thing.getName()}</a>
                 </li>
             </c:forEach>
         </ul>
