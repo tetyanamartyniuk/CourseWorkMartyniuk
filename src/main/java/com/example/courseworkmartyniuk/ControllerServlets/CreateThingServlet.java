@@ -17,6 +17,7 @@ public class CreateThingServlet extends HttpServlet {
             String place = request.getParameter("place");
             String info = request.getParameter("info");
             String keywordsInput = request.getParameter("keywords").trim();
+            String phoneNumber = request.getParameter("phoneNumber");
 
             String[] keyWordsArray = keywordsInput.split("\\s*,\\s*");
             String keywordsWithCommas = String.join(", ", keyWordsArray);
@@ -27,11 +28,13 @@ public class CreateThingServlet extends HttpServlet {
             if (publisher == null || publisher.trim().isEmpty()) {
                 throw new IllegalArgumentException("Ім'я публікатора речі є обов'язковою");
             }
-
+            if (phoneNumber == null || phoneNumber.trim().isEmpty()){
+                throw new IllegalArgumentException("Номер мобільного телефону є обов'язковим");
+            }
 
             ThingDAO dao = (ThingDAO) getServletContext().getAttribute("thingDao");
 
-            boolean success = dao.createThing(publisher, name, place, info, keyWordsArray, true);
+            boolean success = dao.createThing(publisher, name, place, info, keyWordsArray, true, phoneNumber);
 
             if (success) {
                 request.setAttribute("publisher", publisher);
@@ -39,6 +42,7 @@ public class CreateThingServlet extends HttpServlet {
                 request.setAttribute("place", place);
                 request.setAttribute("info", info);
                 request.setAttribute("keywordsString", keywordsWithCommas);
+                request.setAttribute("phoneNumber", phoneNumber);
                 request.getRequestDispatcher("CreationSuccess.jsp").forward(request, response);
             } else {
                 response.sendRedirect("error.jsp");

@@ -50,9 +50,9 @@ input[type="text"] {
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
-    border: none; /* видалити прямокутні контури */
-    border-radius: 20px; /* зробити інпут овальним */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* додати тінь */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 

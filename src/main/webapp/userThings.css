@@ -1,13 +1,28 @@
 body {
-    font-family: 'Courier New', monospace;
+    font-family: Gadalin, monospace;
     background-color: #f3f3f3;
-    color: #333;
+    color: #b3004b;
     margin: 0;
     padding: 0;
 }
 
+.mainPage, .createThing {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b3004b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.mainPage:hover, .createThing:hover {
+    background-color: #ffc1c1;
+}
+
 .container {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, #fa2727, #feb47b);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 30px;
@@ -17,15 +32,15 @@ body {
 }
 
 h1 {
-    color: #4f4a4a;
-    text-shadow: 1px 1px #fff;
+    color: #030000;
+    text-shadow: 1px 1px #d38f8f;
     margin-bottom: 20px;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
-    color: #4a90e2;
+    color: #071626;
     font-weight: bold;
     margin: 10px 0;
     transition: color 0.3s, transform 0.3s;
@@ -69,3 +84,4 @@ li:hover {
         padding: 10px;
     }
 }
+

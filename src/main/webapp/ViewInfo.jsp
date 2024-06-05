@@ -15,11 +15,10 @@
     <p><strong>Місце знахідки:</strong> ${thing.place}</p>
     <p><strong>Інформація:</strong> ${thing.info}</p>
     <p><strong>Ключові слова:</strong> ${keywords}</p>
+    <p><strong>Номер телефону автора знахідки:</strong> ${thing.phoneNumber}</p>
 </div>
 </body>
 </html>
-
-
 
 
 

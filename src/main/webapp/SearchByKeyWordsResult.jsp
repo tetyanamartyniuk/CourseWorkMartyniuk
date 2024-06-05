@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Keyword Search Results</title>
+    <title>Пошук речей</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,27 +16,53 @@
         }
 
         .navigation {
-            text-align: left;
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         .navigation a {
             display: inline-block;
             margin-right: 10px;
             padding: 10px;
+            background-color: #cb274d;
+            color: #fff;
             text-decoration: none;
-            color: #333;
-            border: 1px solid #ccc;
             border-radius: 5px;
         }
 
         .navigation a:hover {
-            background-color: #cb274d;
-            color: #fff;
+            background-color: #a1003b;
+        }
+
+        .found-text {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a.item-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #cb274d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a.item-link:hover {
+            background-color: #a1003b;
         }
 
         p {
@@ -46,30 +72,32 @@
     </style>
 </head>
 <body>
-<h2>Результати пошуку за ключовими словами:</h2>
 
 <div class="navigation">
     <a href="MainPage.jsp">Головна</a>
     <a href="createThing.jsp">Створити річ</a>
 </div>
-
+<h2>Пошук речей за ключовими словами</h2>
 <c:choose>
     <c:when test="${not empty allThings}">
+        <div class="found-text">Здається, ми знайшли щось схоже:</div>
         <ul>
             <c:forEach var="thing" items="${allThings}">
                 <li>
-                    <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}">
-                            ${thing.getName()}
-                    </a>
+                    <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}" class="item-link">${thing.getName()}</a>
                 </li>
             </c:forEach>
         </ul>
     </c:when>
     <c:otherwise>
-        <p>No things found matching the keyword.</p>
+        <p>Вашу річ ще ніхто не знайшов:(</p>
     </c:otherwise>
 </c:choose>
 
 </body>
 </html>
+
+
+
+
 

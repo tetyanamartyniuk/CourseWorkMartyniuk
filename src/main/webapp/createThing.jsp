@@ -31,6 +31,9 @@
         <label for="keywords">Ключові слова:</label>
         <input type="text" id="keywords" name="keywords">
 
+        <label for="phoneNumber">Номер телефону автора знахідки:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber">
+
         <input type="submit" value="Створити">
     </form>
 </div>

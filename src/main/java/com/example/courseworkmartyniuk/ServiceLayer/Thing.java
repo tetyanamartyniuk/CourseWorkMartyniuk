@@ -1,33 +1,33 @@
 package com.example.courseworkmartyniuk.ServiceLayer;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
 public class Thing {
     private String publisher;
     private String name;
     private String place;
     private String info;
     private String[] keyWords;
-
     private boolean userAdded;
+    private String phoneNumber;
 
-    public Thing(String publisher, String name, String place, String info, String[] keyWords, boolean userAdded) {
+    public Thing(String publisher, String name, String place, String info, String[] keyWords, boolean userAdded, String phoneNumber) {
         this.publisher = publisher;
         this.name = name;
         this.place = place;
         this.info = info;
         this.keyWords = keyWords;
         this.userAdded = userAdded;
+        this.phoneNumber = phoneNumber;
     }
 
-    public Thing(String publisher, String name, String place, String info, String[] keyWords) {
+    public Thing(String publisher, String name, String place, String info, String[] keyWords, String phoneNumber) {
         this.publisher = publisher;
         this.name = name;
         this.place = place;
         this.info = info;
         this.keyWords = keyWords;
+        this.phoneNumber = phoneNumber;
         this.userAdded = false;
+
     }
 
 
@@ -77,9 +77,9 @@ public class Thing {
     public void setUserAdded(boolean userAdded) {
         this.userAdded = userAdded;
     }
-    public Boolean getUserAdded() {
-        return userAdded;
-    }
+    public String getPhoneNumber(){return phoneNumber;}
+
+    public void setPhoneNumber(String phoneNumber){this.phoneNumber = phoneNumber;}
 
 }
 

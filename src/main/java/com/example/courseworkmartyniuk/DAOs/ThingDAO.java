@@ -11,8 +11,8 @@ public class ThingDAO {
     private final ArrayList<Thing> dataBase = new ArrayList<>();
     private final ArrayList<Thing> userThings = new ArrayList<>();
 
-    public boolean createThing(String publisher, String name, String place, String info, String[] keywords, boolean userAdded) {
-        Thing newThing = new Thing(publisher, name, place, info, keywords, userAdded);
+    public boolean createThing(String publisher, String name, String place, String info, String[] keywords, boolean userAdded, String phoneNumber) {
+        Thing newThing = new Thing(publisher, name, place, info, keywords, userAdded, phoneNumber);
         if (!dataBase.contains(newThing)) {
             if (userAdded) {
                 userThings.add(newThing);
@@ -53,9 +53,9 @@ public class ThingDAO {
     }
 
 
-    public Thing searchById(String name, String place, String publisher, String info) {
+    public Thing searchById(String name, String place, String publisher, String info, String phoneNumber) {
         for (Thing t : dataBase) {
-            if (t.getName().equals(name) && t.getPlace().equals(place) && t.getPublisher().equals(publisher) && t.getInfo().equals(info)) {
+            if (t.getName().equals(name) && t.getPlace().equals(place) && t.getPublisher().equals(publisher) && t.getInfo().equals(info) && t.getPhoneNumber().equals(phoneNumber)) {
                 return t;
             }
         }

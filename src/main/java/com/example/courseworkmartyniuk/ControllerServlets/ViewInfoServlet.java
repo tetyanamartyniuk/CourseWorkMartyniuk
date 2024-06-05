@@ -20,26 +20,29 @@ public class ViewInfoServlet extends HttpServlet {
         String place = req.getParameter("place");
         String publisher = req.getParameter("publisher");
         String info = req.getParameter("info");
+        String phoneNumber = req.getParameter("phoneNumber");
 
         ThingDAO thingDao = (ThingDAO) getServletContext().getAttribute("thingDao");
-        Thing thing = thingDao.searchById(name, place, publisher, info);
+        Thing thing = thingDao.searchById(name, place, publisher, info, phoneNumber);
 
         if (thing != null) {
             String keywords = String.join(", ", thing.getKeyWords());
 
             req.setAttribute("thing", thing);
             req.setAttribute("keywords", keywords);
-            if (thing.isUserAdded()){
-                req.getRequestDispatcher("ViewInfoForUser.jsp").forward(req,resp);
-            }else{
+            if (thing.isUserAdded()) {
+                req.getRequestDispatcher("ViewInfoForUser.jsp").forward(req, resp);
+            } else {
                 req.getRequestDispatcher("ViewInfo.jsp").forward(req, resp);
             }
-        } else {
+      } else {
             req.setAttribute("errorMessage", "Річ не знайдена");
             req.getRequestDispatcher("error.jsp").forward(req, resp);
         }
+
+        }
     }
-}
+
 
 
 

@@ -9,14 +9,15 @@
     <link rel="stylesheet" type="text/css" href="userThings.css">
 </head>
 <body>
+<a href="MainPage.jsp" class="mainPage">Головна</a>
+
 <div class="container">
-    <a href="MainPage.jsp">Головна</a>
     <h1>Ваші речі:</h1>
-    <a href="createThing.jsp">Створити знахідку</a>
+    <a href="createThing.jsp" class="createThing">Створити знахідку</a>
     <ul>
         <c:forEach var="thing" items="${userThings}">
             <li>
-                <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&keyWords=${fn:join(thing.keyWords, ',')}">
+                <a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&keyWords=${fn:join(thing.keyWords, ',')}&phoneNumber=${thing.phoneNumber}">
                         ${thing.name}
                 </a>
             </li>
@@ -25,6 +26,7 @@
 </div>
 </body>
 </html>
+
 
 
 

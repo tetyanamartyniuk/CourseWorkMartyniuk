@@ -48,7 +48,7 @@
 
         <c:if test="${not empty allThings}">
             <c:forEach var="thing" items="${allThings}">
-                <li><a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}">${thing.name}</a></li>
+                <li><a href="view-info-servlet?name=${thing.name}&place=${thing.place}&publisher=${thing.publisher}&info=${thing.info}&phoneNumber=${thing.phoneNumber}">${thing.name}</a></li>
             </c:forEach>
         </c:if>
 </ul>

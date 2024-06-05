@@ -15,6 +15,7 @@
         <p><strong>Місце знахідки: </strong> <c:out value="${place}"/></p>
         <p><strong>Додаткова інформація: </strong> <c:out value="${info}"/></p>
         <p><strong>Ключові слова: </strong> <c:out value="${keywordsString}"/></p>
+        <p><strong>Номер телефону автора знахідки:</strong><c:out value="${phoneNumber}"/></p>
     </div>
     <a href="user-page-servlet" class="button">Ваші речі</a>
 </div>
