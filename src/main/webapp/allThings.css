@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    color: #1c1717;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #b3004b;
+    border: 1px solid #b3004b;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: #b3004b;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: #b3004b;
+}
+
+list{
+    text-align: center;
+}
+.button2 {
+    float: left;
+    margin-right: 10px; /* Додатковий відступ між кнопками */
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+body {
+    font-family: Gadalin, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    text-align: center;
+
+}
+
+h1 {
+    color: #333;
+    padding: 0;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: #ffffff;
+    color: rgba(63, 1, 18, 0.69);
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #cb274d;
+    color: #ffffff;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none; /* видалити прямокутні контури */
+    border-radius: 20px; /* зробити інпут овальним */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* додати тінь */
+}
+
+
+form {
+        background-color: #fff;
+        padding: 10px;
+        border: none; /* видалити прямокутні контури */
+        border-radius: 20px; /* зробити форму овальною */
+}
+
+label {
+    display: none;
+}
+
+
+
+button {
+    background-color: #cb274d;
+    color: white;
+    border: white;
+    padding: 5px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d07979;
+}
+
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: 500px; /* Висота зображення */
+    object-fit: cover; /* Адаптація зображення без спотворення пропорцій */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.img-container {
+    text-align: center; /* Центрує зображення горизонтально */
+    padding: 0;
+}
+
+
+

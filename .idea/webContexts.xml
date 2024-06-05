@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/DeleteThing.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ThingsList.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/UserThingPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ViewInfo.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/ViewInfoForUser.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/allThingsPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jspPages/MainPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jspPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jspPages/ViewInfo.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jspPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jspPages/allThingsPage.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jspPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/jspPages/createThing.jsp" value="file://$PROJECT_DIR$/src/main/webapp/jspPages" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/searchByName.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/success.jsp" value="file://$PROJECT_DIR$/src/main/webapp" />
+      </map>
+    </option>
+  </component>
+</project>
